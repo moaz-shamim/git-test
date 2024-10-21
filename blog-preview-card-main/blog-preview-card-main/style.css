@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--Yellow);
+  height: 960px;
+  font-family: "Figtree", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: var(--White);
+  width: 384px;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 6px 3px 0px rgba(0, 0, 0, 5);
+}
+
+.card-img {
+  width: 336px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img svg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 194px;
+  gap: 12px;
+}
+
+.card-content div:first-child {
+  padding: 12px;
+  font-weight: 800;
+  background-color: var(--Yellow);
+  width: 82px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+}
+
+.card-content div:nth-child(2) {
+  width: 164px;
+  height: 21px;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 14px;
+}
+
+.card-content div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.card-content div:nth-child(4) {
+  height: 72px;
+  color: #6b6b6b;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.card-footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-footer img {
+  width: 32px;
+  height: 32px;
+}
+.card-footer div span {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 800;
+}
+
+@media (min-width: 375px) and (max-width: 375px) {
+  body {
+    background-color: var(--Yellow);
+    width: 375px;
+    height: 812px;
+    font-family: "Figtree", sans-serif;
+  }
+  .card {
+    background-color: var(--White);
+    width: 327px;
+    height: 501px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 6px 3px 0px rgba(0, 0, 0, 5);
+  }
+}
