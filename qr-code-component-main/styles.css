@@ -14,12 +14,12 @@ body {
   font-family: "Outfit", sans-serif;
   font-size: 15px;
   padding: 20px;
+  text-align: center
 }
 
 .card {
-  max-width: 325px;
+  max-width: 20rem;
   height: 495px;
-  text-align: center;
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -29,13 +29,12 @@ body {
 }
 
 .card img {
+    display:block;
     max-width: 100%;
     border-radius: 0.75rem;
     height: auto;
 }
 .text-wrapper {
-    /* padding: 1.5rem 1.25rem; */
-    text-align: center;
     margin-top: .50rem;
   }
   
@@ -49,7 +48,6 @@ body {
   
   .text-wrapper p {
     color: hsl(220, 15%, 55%);
-    font-weight: 400;
     font-size: 1rem;
 
 }
