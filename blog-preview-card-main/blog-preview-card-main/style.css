@@ -86,7 +86,7 @@ main {
   height: 21px;
   font-weight: 600;
   line-height: 150%;
-  font-size: 14px;
+  font-size: .75px;
 }
 
 .card-content h1 {
