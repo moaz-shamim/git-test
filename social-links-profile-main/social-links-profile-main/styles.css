@@ -126,4 +126,7 @@ nav {
 
 .attribution a {
   color: var(--Green);
+  font-weight: var(--fw-bold);
+  border-bottom: 2px dotted var(--Green); 
+
 }
