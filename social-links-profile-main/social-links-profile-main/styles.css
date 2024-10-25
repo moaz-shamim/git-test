@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+:root {
+  /* Primary Color */
+  --Green: hsl(75, 94%, 57%);
+  /* Neutral Colors */
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+  /* Typography */
+  --fs-small: 0.875rem;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Grey900);
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  background-color: var(--Grey800);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+img {
+  border-radius: 100%;
+  width: 50%;
+}
+
+nav {
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.profile_info{
+  text-align: center;
+}
+
+.profile_location {
+  color: var(--Green);
+  font-weight: var(--fw-semibold);
+  margin-top: 0.6rem;
+}
+
+.profile_summary {
+  text-align: center;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-small);
+  padding-inline: 0.4rem;
+  color: var(--White);
+  margin-top: 2rem;
+}
+
+.profile_title {
+  font-weight: var(--fw-bold);
+  padding-inline: 0.4em;
+  margin-top: 2rem;
+  color: var(--White);
+  font-size: 2rem;
+}
+
+.social__list-item {
+  margin-top: 1rem;
+  background-color: var(--Grey700);
+  color: var(--White);
+  padding: 0.75rem;
+  font-weight: var(--fw-bold);
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+.social__list-item:hover {
+  background-color: var(--Green);
+  color: var(--Grey900);
+  transition: 0.25s;
+}
+
+.attribution {
+ text-align: center;
+  color: var(--White );
+  font-weight: var(--fw-semibold);
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: var(--Green);
+}
