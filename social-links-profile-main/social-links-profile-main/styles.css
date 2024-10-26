@@ -41,6 +41,7 @@ body {
   background-color: var(--Grey900);
   padding: 2rem;
   font-family: 'Inter';
+  min-height: 100vh;
 }
 
 main {
